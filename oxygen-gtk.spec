@@ -1,14 +1,17 @@
+%define git git210101227
+
 Name: oxygen-gtk
 Summary: A port of the default KDE widget theme (Oxygen) to gtk
 Version: 1.0.0
-Release: %mkrel 1
-Source0: http://fr2.rpmfind.net/linux/KDE/stable/oxygen-gtk/%{version}/src/%{name}-%{version}.tar.bz2
+Release: %mkrel 1.%git.1
+Source0: http://fr2.rpmfind.net/linux/KDE/stable/oxygen-gtk/%{version}/src/%{name}-%{version}-%git.tar.bz2
 URL: https://projects.kde.org/projects/playground/artwork/oxygen-gtk
-Group: Graphical desktop/GNOME
+Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: LGPLv2+
 BuildRequires: gtk+2-devel
 BuildRequires: cmake
+Suggests: gtk-qt-kcm
 
 %description
 Oxygen-Gtk is a port of the default KDE widget theme (Oxygen), to gtk.
