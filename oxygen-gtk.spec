@@ -11,7 +11,11 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License: LGPLv2+
 BuildRequires: gtk+2-devel
 BuildRequires: cmake
+%if %{mdvver} < 201100
+Suggests: systemsettings-qt-gtk
+%else
 Suggests: gtk-qt-kcm
+%endif
 
 %description
 Oxygen-Gtk is a port of the default KDE widget theme (Oxygen), to gtk.
