@@ -1,7 +1,7 @@
 Summary:	A port of the default KDE widget theme (Oxygen) to gtk
 Name:		oxygen-gtk
 Version:	1.3.4
-Release:	2
+Release:	3
 Group:		Graphical desktop/KDE
 License:	LGPLv2+
 Url:		https://projects.kde.org/projects/playground/artwork/oxygen-gtk
